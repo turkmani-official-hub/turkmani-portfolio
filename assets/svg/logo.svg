@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .sym { font-family: "Poppins", "Montserrat", Arial, sans-serif; font-weight: 800; fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <g transform="translate(128,128)" text-anchor="middle">
+    <text x="-70" y="20" class="sym" font-size="100">&lt;</text>
+    <text x="0" y="20" class="sym" font-size="110" transform="skewX(-12)">T</text>
+    <text x="70" y="20" class="sym" font-size="100">&gt;</text>
+  </g>
+</svg>

@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins" , serif;
+}
+
+body{
+    background-color: #1A1A33;
+}
+
+.logo{
+    width: 60px;
+    margin: -100;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 0.5rem;
+}
+
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.navigation a:hover{
+    color: #33FFCC;
+}
+
+hr{
+    opacity: 10%;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+
+.herosub{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.name{
+    font-size: 3rem;
+    color: #eeeeee;
+}
+
+.title{
+    font-size: 4rem;
+    color: #33FFCC;
+}
+
+.avatar{
+    width: 40%;
+}
+
+.aboutme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    gap: 10rem;
+}
+
+.aboutmeimg{
+    width: 40%;
+}
+
+.textcontainers{
+    display: flex;
+    flex-direction: column;
+}
+
+.texttitel{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+}
+
+.aboutname{
+    color: #eeeeee;
+}
+
+.abouttitle{
+    color: #33FFCC;
+}
+
+.aboutmepar{
+    text-align: justify;
+    color: rgba(238, 238, 238, 0.75);
+}
+
+.works{
+    background-color: #3B305B;
+    padding: 10rem 10rem;
+    margin: 5rem 0rem;
+}
+
+.workscontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+
+.projecttitle {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+  font-size: 2rem;
+}
+
+.works ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.works li{
+    border-radius: 16px;
+    background-color: rgba(57, 62, 70, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 1rem 4rem;
+}
+
+.works li img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.works li :hover{
+    transform: scale(1.2);
+}
+
+.contactcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.contacttitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.contact h3, .contact a{
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+.emailandphone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.socialmedia a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: rgba(57, 62, 70, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+}
+
+.socialmedia img{
+    width: 24px;
+    height: 24px;
+}
+
+footer{
+    color: #eeeeee;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 1023px){
+    header{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .avatar{
+        font-size: 400PX;
+    }
+
+    .name , .title{
+        font-size: 2rem;
+    }
+
+    .aboutme{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .textcontainers{
+        align-items: center;
+        margin: 0rem 5rem;
+        gap: 1rem;
+    }
+
+    .aboutname , .abouttitle{
+        font-size: 2rem;
+    }
+
+    .aboutmeimg{
+        width: 400px;
+    }
+
+    .works{
+        padding: 0;
+    }
+
+    .workscontainer{
+        padding: 5rem 0rem;
+        gap: 3rem;
+    }
+
+    .projecttitle{
+        margin-left: 1rem;
+    }
+
+    .works ul{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contactcontainer{
+        margin: 10rem 5rem;
+        gap: 2rem;
+    }
+
+    .contact{
+        flex-direction: column;
+        gap: 1rem;
+        margin-right: 0;
+    }
+}
